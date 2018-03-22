@@ -1,0 +1,271 @@
+body {
+  padding: 0px;
+  margin: 0px 0px 0px 0px;  
+}
+
+.header {
+  height: 100vh;
+  background-image: url("../images/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 60% center;
+  transition: all 1s;
+  left: 0;
+}
+
+i {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.contact-link {
+  text-decoration: none;
+  color: black;
+}
+
+@media (min-width: 830px) {
+  .left {
+    max-width: 50%;
+    float: left;
+  }
+  
+  .content p {    
+    font-size: 25px;    
+  }
+
+  .content h2 {
+    font-size: 40px!important;
+    margin-top: 2%!important;
+  }
+
+  .right {    
+    max-width: 40%;
+    margin-top: 5%;
+  }
+
+  .right img {
+    height: initial!important;
+  }
+
+  .thumbnail {
+    max-width: 100%;  
+  }
+  
+  .jobs {
+    text-align: center;
+    margin-top: 2%;
+  }
+
+  .jobs p {
+    margin-top: 0px;
+    margin-bottom: initial;
+  }
+
+  .box {
+    width: 30%!important;
+    display: inline-block;
+    margin-left: 5%!important;
+    margin-right: 5%;
+  }
+}
+
+.portfolio {
+  padding-top: 0%!important;
+}
+
+.right { 
+  float: right;
+  text-align: center;
+  width: 100%;  
+}
+
+.right img {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+  animation-name: fade;
+  animation-duration: 1s;  
+  height: 140px;
+}
+
+/* Menu */
+.menu {
+    padding: 10px;
+    text-align: center;
+    padding-top: 2%;        
+  }
+
+.menu ul {  
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li {
+  display: inline;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+/* end Menu */
+
+/* Content */
+.content {  
+  padding: 5%;
+  padding-bottom: 0px;
+}
+
+.content h1 {
+  font-family: GothamRoundedLight;
+  font-size: 60px;
+  margin-bottom: 0px;
+  padding-top: 5%;
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+
+.content h2 {
+  font-family: GothamRoundedLight;
+  font-size: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  animation-duration: 0.5s;
+  animation-name: slidein;
+}
+
+.content h3 {
+  font-family: GothamRoundedLight;
+  font-size: 40px;
+  margin-top: 0px;
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+
+.content h4 {
+  margin-top: 0px;
+  font-family: GothamRoundedLight-italic;
+  font-size: 25px;
+  animation-duration: 0.5s;
+  animation-name: slidein;
+}
+
+.content p {
+  font-family: GothamRoundedLight;
+  /* font-size: 25px; */
+  animation-duration: 0.5s;
+  animation-name: slidein;
+}
+
+/* end Content */
+
+hr {
+  border: solid 2px;
+  max-width: 5%;
+  margin-left: 0px;
+  margin-top: 13%;
+  animation-duration: 0.7s;
+  animation-name: slidein;  
+}
+
+.menu a {
+  text-decoration: none;
+  color: #000;
+  font-family: GothamRoundedLight;
+  -webkit-transition: color 0.15s;
+  transition: color 0.15s;
+}
+
+.menu a:hover {
+  color: #c2c2c2;
+}
+
+/* Slide */
+.mySlides {
+    display: none;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+/* end Slide */
+
+/* Portfolio */
+
+.jobs {
+  text-align: center;  
+}
+
+.jobs h2 {
+  display: none;
+}
+
+.jobs p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.box {
+  width: 40%;
+  margin-left: 30%; 
+}
+
+.thumbnail {
+  max-width: 100%;  
+}
+
+/* end Portfolio */
+
+.contact {
+  text-align: center;
+}
+
+/* Animations */
+
+@-webkit-keyframes fade {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+/* end Animations */
+
+/* FONT FACES */
+
+@font-face {
+  font-family: GothamRoundedBook;
+  src: url(../fonts/GothamRounded-Book.otf);
+}
+
+@font-face {
+  font-family: GothamRoundedBook-italic;
+  src: url(../fonts/GothamRounded-BookItalic.otf);
+}
+
+@font-face {
+  font-family: GothamRoundedLight;
+  src: url(../fonts/GothamRounded-Light.otf);
+}
+
+@font-face {
+  font-family: GothamRoundedLight-italic;
+  src: url(../fonts/GothamRounded-LightItalic.otf);
+}
