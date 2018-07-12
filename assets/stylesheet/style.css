@@ -1,6 +1,7 @@
 body {
   padding: 0px;
-  margin: 0px 0px 0px 0px;  
+  margin: 0px 0px 0px 0px;
+  font-family: GothamRoundedLight;
 }
 
 .header {
@@ -24,13 +25,22 @@ i {
 }
 
 @media (min-width: 830px) {
+  .meter {
+    height: 10px !important;  /* Can be anything */
+    position: relative;
+    background: #555;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+  }
+
   .left {
     max-width: 50%;
     float: left;
   }
-  
-  .content p {    
-    font-size: 25px;    
+
+  .content p {
+    font-size: 25px;
   }
 
   .content h2 {
@@ -38,7 +48,7 @@ i {
     margin-top: 2%!important;
   }
 
-  .right {    
+  .right {
     max-width: 40%;
     margin-top: 5%;
   }
@@ -48,9 +58,9 @@ i {
   }
 
   .thumbnail {
-    max-width: 100%;  
+    max-width: 100%;
   }
-  
+
   .jobs {
     text-align: center;
     margin-top: 2%;
@@ -73,17 +83,17 @@ i {
   padding-top: 0%!important;
 }
 
-.right { 
+.right {
   float: right;
   text-align: center;
-  width: 100%;  
+  width: 100%;
 }
 
 .right img {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1s;
   animation-name: fade;
-  animation-duration: 1s;  
+  animation-duration: 1s;
   height: 140px;
 }
 
@@ -91,10 +101,10 @@ i {
 .menu {
     padding: 10px;
     text-align: center;
-    padding-top: 2%;        
+    padding-top: 2%;
   }
 
-.menu ul {  
+.menu ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -108,7 +118,7 @@ i {
 /* end Menu */
 
 /* Content */
-.content {  
+.content {
   padding: 5%;
   padding-bottom: 0px;
 }
@@ -162,7 +172,7 @@ hr {
   margin-left: 0px;
   margin-top: 13%;
   animation-duration: 0.7s;
-  animation-name: slidein;  
+  animation-name: slidein;
 }
 
 .menu a {
@@ -194,7 +204,7 @@ hr {
 /* Portfolio */
 
 .jobs {
-  text-align: center;  
+  text-align: center;
 }
 
 .jobs h2 {
@@ -208,11 +218,11 @@ hr {
 
 .box {
   width: 40%;
-  margin-left: 30%; 
+  margin-left: 30%;
 }
 
 .thumbnail {
-  max-width: 100%;  
+  max-width: 100%;
 }
 
 /* end Portfolio */
@@ -224,12 +234,12 @@ hr {
 /* Animations */
 
 @-webkit-keyframes fade {
-  from {opacity: 0} 
+  from {opacity: 0}
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: 0} 
+  from {opacity: 0}
   to {opacity: 1}
 }
 
@@ -237,7 +247,7 @@ hr {
 @keyframes slidein {
   from {
     margin-left: 100%;
-    width: 300%; 
+    width: 300%;
   }
 
   to {
@@ -246,6 +256,41 @@ hr {
   }
 }
 
+.meter {
+  height: 5px;  /* Can be anything */
+  position: relative;
+  background: #555;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+}
+
+.meter span {
+  display: block;
+  height: 100%;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.html {
+  background-color: rgb(43,194,83);
+}
+
+.rails {
+  background-color: tomato;
+}
+
+.react {
+  background-color: rgb(47, 187, 210);
+}
+
+.bootstrap {
+  background-color: #b900b9;
+}
 /* end Animations */
 
 /* FONT FACES */

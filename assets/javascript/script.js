@@ -13,24 +13,24 @@ function start() {
   });
 
   this.slideIndex = "home";
-  changeSlide(slideIndex);  
+  changeSlide(slideIndex);
 }
 
 function changeSlide(n) {
-  showSlides(slideIndex = n);  
+  showSlides(slideIndex = n);
 }
 
 function showSlides(n) {
   var i;
-  var slides = document.getElementsByClassName("mySlides");    
- 
+  var slides = document.getElementsByClassName("myslides");
+
   for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+    slides[i].style.display = "none";
   }
- 
+
   document.getElementById(n).style.display = "inline-block";
   this.backgroundChange = document.querySelector(".header");
-  
+
   if (n != "home") {
     this.backgroundChange.style = 'background-image: url("assets/images/bg.png")!important';
   } else {
